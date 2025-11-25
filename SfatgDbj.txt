@@ -1,0 +1,402 @@
+shared.bomboclat cheat ok = {
+    ['Main'] = {
+        ['License Key'] = 'Key',
+        ['Intro'] = true,
+        ['Sync'] = true,
+
+        ['Panic'] = {
+            ['Enabled'] = true,
+            ['Disable Aim Assist'] = true,
+            ['Disable Silent Aim'] = true,
+            ['Disable Trigger Bot'] = true,
+            ['Disable Visuals'] = true,
+            ['Disable Player Modifications'] = true,
+        }
+    },
+
+    ['Universal Checks'] = {
+        ['Knocked'] = true,
+        ['Grabbed'] = true,
+        ['Wall'] = true,
+        ['Forcefield'] = true,
+
+        ['Self Knocked'] = false,
+        ['Self Grabbed'] = false,
+        ['Self Forcefield'] = false,
+    },
+    
+    ['Unlock Checks'] = {
+        ['Unlock on Target Knock'] = false,
+        ['Unlock on Self Knock'] = false,
+    },
+
+    ['Keybinds'] = {
+        ['Aim Assist'] = 'V',
+        ['Silent Aim'] = 'Q',
+        ['Trigger Bot Target'] = 'Q',
+        ['Trigger Bot Activate'] = 'MouseButton1',
+        ['Speed'] = 'T',
+        ['Inventory Sorter'] = 'F2',
+        ['Panic'] = 'L',
+    },
+
+    ['Silent Aim'] = {
+        ['Enabled'] = true,
+        ['Target Mode'] = 'Target',--Target,Automatic
+        ['Target Line'] = true,
+          ['ColorInFov'] = Color3.fromRGB(255,255,255)
+          ['ColorOutFov'] = Color3.fromRGB(216, 103, 103)
+
+        ['Hit Target'] = {
+            ['Hit Part'] = 'Closest Point',
+        },
+
+        ['FOV'] = {
+            ['Value'] = 75,
+            ['Visualize FOV'] = false,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
+
+            ['Power'] = {
+                ['Enabled'] = false,
+                ['Prediction Power'] = 1.042,
+            },
+        },
+
+        ['Anti Curve'] = {
+            ['Enabled'] = false,
+            ['Mode'] = 'Angles',
+
+            ['Angles'] = {
+                ['Max Angle'] = 7,
+                ['Distance Threshold'] = 65,
+                ['Debug Print'] = false,
+            },
+        },
+    },
+
+    ['Aim Assist'] = {
+        ['Enabled'] = true,
+        ['Mode'] = 'Camera', -- Dynamic / Mouse / Camera
+
+        ['Hit Target'] = {
+            ['Hit Part'] = 'Closest Point',
+
+            ['Prediction'] = {
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
+            },
+        },
+
+        ['Camera Mode'] = {
+            ['Shift Locked'] = true,
+            ['Third Person'] = true,
+            ['First Person'] = true,
+        },
+
+        ['Smoothing'] = {
+            ['Smoothing Value'] = {
+                ['X'] = 0.066,
+                ['Y'] = 0.066,
+                ['Z'] = 0.066,
+
+                ['Mouse Smoothing'] = {
+                    ['X'] = 0.14,
+                    ['Y'] = 0.14,
+                    ['Z'] = 0.14,
+                }
+            },
+
+            ['Easing Style First'] = 'Linear',
+            ['Easing Style Second'] = 'Linear',
+            ['Easing Direction'] = 'InOut',
+        },
+
+        ['FOV'] = {
+            ['Value'] = 85,
+            ['Visualize FOV'] = false,
+        },
+    },
+
+    ['Triggerbot'] = {
+        ['Enabled'] = true,
+        ['Target Mode'] = 'FOV',
+        ['Mode'] = 'Hold', -- Hold / Toggle
+
+
+        ['Timing'] = {
+            ['Cooldown'] = 0.00,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
+        },
+
+        ['FOV'] = {
+            ['Value'] = 65,
+            ['Visualize FOV'] = false,
+        },
+    },
+
+    ['Player Modification'] = {
+        ['Movement'] = {
+            ['Enabled'] = true,
+
+            ['Speed Modification'] = {
+                ['Enabled'] = true,
+                ['Value'] = 5,
+
+                ['Misc Modification'] = {
+                    ['No Jump Cooldown'] = false,
+                    ['No Slowdowns'] = false,
+                },
+            },
+
+            ['Inventory Sorter'] = {
+                ['Enabled'] = true,
+                ['Sort Food'] = true,
+                ['Order'] = {
+                    "[Double-Barrel SG]",
+                    "[Revolver]",
+                    "[TacticalShotgun]",
+                    "[Knife]",
+                },
+            },
+        },
+     },
+}
+shared["Auth_Key"] = ""
+
+shared.Saved = {
+    ["General"] = {
+        ["Hotkeys"] = {
+            ["Aim Bot"] = "C",
+            ["Walk Speed"] = "G",
+            ["Silent Aim"] = "O",
+            ["Double Tap"] = "E",
+            ["Trigger Bot"] = "X",
+            ["Trigger Bot Target"] = "Q",
+            ["Silent Aim Target"] = "Q",
+            ["Hit Part Override"] = "F",
+            ["Inventory Sorter"] = "R"
+        },
+        ["Show Hotkeys"] = true
+    },
+
+    ["Conditions"] = {
+        ["Player Protected"] = true,
+        ["Player Visible"] = true,
+        ["Player Grabbed"] = true,
+        ["Player Knocked"] = true,
+        ["Player Moving"] = false,
+        ["Tool Equipped"] = false,
+        ["Self Knocked"] = false,
+        ["Chat Focused"] = true,
+        ["Shift Locked"] = false,
+        ["Third Person"] = false
+    },
+
+    ["Silent Aim"] = {
+        ["Enabled"] = true,
+        ["Selection"] = "Automatic",
+        ["Max Distance"] = math.huge,
+        ["YAxis"] = false,
+        ["HitChance"] = 100,
+        ["YStabilizer"] = 0,
+        ["Hit Part"] = "Closest Point",
+        ["Closest Point"] = { Mode = "Advanced", Scale = 0.15 },
+        ["Hit Part Override"] = { Enabled = false, "Head" },
+        ["Prediction"] = { Enabled = false, Mode = "Regular", Scale = 4.9, X = 0.13, Y = 0.13, Z = 0.13 },
+        ["Client Redirection"] = {
+            ["Enabled"] = false,
+            ["Weapons"] = { "[Revolver]", "[Silencer]", "[Glock]" }
+        },
+        ["FOV"] = {
+            ["Enabled"] = true,
+            ["Visible"] = true,
+            ["Sync"] = false,
+            ["Type"] = "Box",
+            ["Box"] = { 7, 7 },
+            ["3D"] = { 5, 7, 5 },
+            ["Circle"] = 150,
+            ["Hit Scan"] = math.huge,
+            ["Weapon Configs"] = {
+                ["Enabled"] = false,
+                ["Shotguns"] = { Circle = 150, Box = { 5, 5 } },
+                ["Pistols"] = { Circle = 150, Box = { 4, 4 } },
+                ["Others"] = { Circle = 15, Box = { 2, 2 } }
+            }
+        }
+    },
+
+    ["Aim Bot"] = {
+        ["Enabled"] = true,
+        ["Hit Part"] = "Head",
+        ["Closest Point"] = { Mode = "Advanced", Scale = 0.93 },
+        ["Stickiness"] = 1,
+        ["Sensitivity"] = 2,
+        ["Easing Style"] = "Circular",
+        ["Easing Direction"] = "InOut",
+        ["Prediction"] = { Enabled = true, X = 0.13, Y = 0.13, Z = 0.13 },
+        ["FOV"] = { Enabled = true, Size = 300 }
+    },
+
+    ["Trigger Bot"] = {
+        ["Enabled"] = false,
+        ["Selection"] = "Automatic",
+        ["Max Distance"] = 250,
+        ["Radius"] = math.huge,
+        ["Cooldown"] = 0,
+        ["Activation"] = { Mode = "Keybind", Type = "Toggle" },
+        ["Prediction"] = { Enabled = false, 0.13 },
+        ["FOV"] = { Visible = false, X = 3.3, Y = 7, Z = 3.6 }
+    },
+
+    ["Gun Modifications"] = {
+        ["Double Tap"] = { Enabled = false, { "[Revolver]", "[Silencer]" } },
+        ["Spread Modifier"] = { Enabled = true, Value = 0.8, Randomizer = { Enabled = false, Value = math.random(0.1, 0.4) } }
+    },
+
+    ["Player Modifications"] = {
+        ["No Jump Cooldown"] = false,
+        ["No Tripping"] = false,
+        ["Walk Speed"] = { Enabled = true, Speed = 2, Glide = false }
+    },
+
+    ["Game Utilities"] = {
+        ["Inventory Helper"] = {
+            Enabled = false,
+            loadstring(game:HttpGet(Order = { "[Double-Barrel SG]", "[Revolver]", "[TacticalShotgun]", "[Knife]" }
+        }
+    }
+}
+loadstring(game:HttpGet("https://github.com/ycondave3-eng/adonisbypass-20obfuscated.txts.git
+getgenv().UsedAdonisBypass = true 
+local oldfunction; 
+oldfunction = hookfunction(debug.info, function(...)
+	local args = {...}
+	if (args[1] == 2 and args[2] == "f") then
+		return nil
+	else
+		return oldfunction(...);
+	end
+end);
+
+repeat task.wait(0.1) until game:IsLoaded()
+
+for Index, Data in next, getgc() do
+	pcall(function()
+		local info = debug.getinfo(Data)
+		local up = debug.getconstants(Data)
+		if typeof(Data) == "function" and info.name == "Immutable" then
+			hookfunction(Data, function()
+				return nil
+			end)
+		elseif typeof(Data) == "function" and table.find(up, "MethodError") and table.find(up, "ServerError") and table.find(up, "ReadError") then
+			hookfunction(v, function()
+				return nil
+			end)
+		elseif typeof(Data) == "function" and table.find(up, "Disconnected from server") then
+			hookfunction(v, function()
+				return nil
+			end)
+		elseif typeof(Data) == "function" and table.find(up, "fakePlayer") then
+			hookfunction(v, function()
+				return nil
+			end)
+		elseif typeof(Data) == "function" and table.find(up, "Tampering with Client [read rt0001]") and table.find(up, "ReadError") and table.find(up, "Potentially dangerous index") then
+			hookfunction(v, function()
+				return nil
+			end)
+		end
+	end)
+end
+
+local LocalPlayer = game.Players.LocalPlayer
+local oldhmmi
+local oldhmmnc
+oldhmmi = hookmetamethod(game, "__index", function(self, method)
+	if self == LocalPlayer and method:lower() == "kick" then
+		return function()
+			--print("lol dumb adonis")
+		end
+	end
+	return oldhmmi(self, method)
+end)
+oldhmmnc = hookmetamethod(game, "__namecall", function(self, ...)
+	if self == LocalPlayer and getnamecallmethod():lower() == "kick" then
+		return
+	end
+	return oldhmmnc(self, ...)
+end)
+
+function findRemoteEventWithFunction(parent)
+	-- Iterate through all the children of the parent
+	for _, child in ipairs(parent:GetChildren()) do
+		-- Check if the child is a RemoteEvent
+		if child:IsA("RemoteEvent") then
+			-- Iterate through all the children of the RemoteEvent
+			for _, grandchild in ipairs(child:GetChildren()) do
+				-- Check if the grandchild is a RemoteFunction named "__function"
+				if grandchild:IsA("RemoteFunction") and grandchild.Name == "__FUNCTION" then
+					-- Return the RemoteEvent if found
+					return child
+				end
+			end
+		end
+	end
+	-- Return nil if no such RemoteEvent is found
+	return nil
+end
+
+local rf = findRemoteEventWithFunction(game:GetService("ReplicatedStorage"))
+local ofunc
+ofunc = hookfunction(rf.FireServer, function (...)
+	local args = {...}
+	if args[2] == "BadMemes" or table.find(args,"kick") then
+		--print("blocked adonis rcall")
+		return nil
+	end
+	--print(...)
+	return ofunc(...)
+end)
+local foundfunc = nil
+local foundtable1 = nil
+local foundtable2 = nil
+while getgenv().UsedAdonisBypass do
+    if foundfunc == nil then
+        for Index, Data in next, getgc(false) do
+            pcall(function()
+                local info
+                if type(Data) == "function" then
+                    info = debug.getinfo(Data)
+                end
+                if foundfunc == nil and type(Data) == "function" and info.name == "Send" and islclosure(Data) then
+                    foundfunc = Data
+                end
+            end)
+        end
+        for Index, Data in next, getgc(true) do
+            pcall(function()
+                if foundfunc ~= nil and type(Data) == "table" and Data.CheckClient and Data.Returnables and Data.Send == foundfunc then
+                    --print("Remote: " .. tostring(Data))
+                    foundtable1 = Data
+                end
+                if type(Data) == "table" and Data.Remote and Data.DepsName then
+                    --print("Client: " .. tostring(Data))
+                    foundtable2 = Data
+                end
+            end)
+        end
+    else
+        foundfunc("ClientCheck", {Sent = foundtable1.Sent or 0, Received = foundtable1.Received}, foundtable2.DepsName)
+    end
+    task.wait(10)
+end
